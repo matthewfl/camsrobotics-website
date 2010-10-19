@@ -1,0 +1,23 @@
+/*
+ * css for the Nerd herd website
+ * created by Matthew Francis-Landau 2010 programming leader
+ */
+
+body {
+    background: #0000FF;
+}
+
+.content {
+    background: #00FF00;
+    overflow: hidden;
+}
+
+.sidebar {
+    background: #0FFF00;
+}
+
+.widget {
+    overflow: hidden;
+    background: #0000AA;
+    width: 160px;
+}
