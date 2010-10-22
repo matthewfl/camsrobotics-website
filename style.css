@@ -19,5 +19,9 @@ body {
 .widget {
     overflow: hidden;
     background: #0000AA;
-    width: 160px;
+    width: 200px;   
+}
+
+.break {
+    height: 5px;
 }

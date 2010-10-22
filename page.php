@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="grid_9 content">
+<div class="page grid_9">
 <?php get_template_part('loop', 'index'); ?>
 </div>
 <?php 

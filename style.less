@@ -1,0 +1,75 @@
+/*
+ * css for the Nerd herd website
+ * created by Matthew Francis-Landau 2010 programming leader
+ */
+
+@import "960";
+
+@lightBlue: #0000AA;
+@darkBlue: #0000FF;
+@green: #00FF00;
+
+body {
+    background: url(images/background.jpg) no-repeat;
+    //background-repeat: no-repeat;
+}
+
+.content {
+    background: @green;
+    overflow: hidden;
+    .rounded(5px);
+}
+
+.sidebar {
+    background: #00FF00;
+}
+
+.widget {
+    overflow: hidden;
+    background: #0000AA;
+    width: 200px;
+    .rounded(8px);
+    .grid_3;
+}
+
+.widget-title {
+    //float: left;
+    margin-left: 5px;
+}
+
+.widget-content {
+    margin-left: 20px;
+}
+
+#head {
+    .grid_12;
+    //left: -150px;
+    background: url(images/topBanner.jpg);
+}
+
+#header {
+    text-align: center;
+    font-size: 64px;
+    //background: url(images/topBanner.jpg);
+}
+
+.post {
+    .content;
+}
+
+.page {
+    .content;
+}
+
+.sidebar {}
+.break { .clear; }
+
+.break {
+    height: 8px;
+}
+
+.rounded(@radius: 3px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
