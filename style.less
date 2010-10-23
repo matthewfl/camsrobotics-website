@@ -14,22 +14,33 @@ body {
     //background-repeat: no-repeat;
 }
 
-.content {
+.mainContent {
     background: @green;
     overflow: hidden;
-    .rounded(5px);
+    .rounded(15px);
 }
 
 .sidebar {
     background: #00FF00;
+    .break {
+	height: 8px;
+    }
+    .rounded(10px);
 }
 
 .widget {
     overflow: hidden;
     background: #0000AA;
     width: 200px;
+    left: 10px;
+    position: relative;
     .rounded(8px);
-    .grid_3;
+    a {
+	color: #FF0000;
+    }
+    a:vistied {
+	color: #00FF00;
+    }
 }
 
 .widget-title {
@@ -53,22 +64,30 @@ body {
     //background: url(images/topBanner.jpg);
 }
 
+.content {
+    width: 97%;
+    left: 15px;
+    position: relative;
+}
+
+.title {
+    width: 45%;
+    left: 8px;
+    top: 4px;
+    position: relative;
+    
+}
+
 .post {
-    .content;
+    .mainContent;
 }
 
 .page {
-    .content;
 }
 
-.sidebar {}
-.break { .clear; }
+.break { .clear; height: 15px; }
 
-.break {
-    height: 8px;
-}
-
-.rounded(@radius: 3px) {
+.rounded(@radius: 5px) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
     border-radius: @radius;

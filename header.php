@@ -14,4 +14,4 @@
       <div id="head" class="grid_12">
 	<div id="header">Nerd Herd</div>
       </div>
-      <div class="clear"> </div>
+      <div class="break"> </div>

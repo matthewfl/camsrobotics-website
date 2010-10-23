@@ -12,9 +12,9 @@ function nerdherd_widgets_init () {
 			   'id' => 'sidebar-widget',
 			   'description' => 'Sidebar Widget',
 			   'before_widget' => '<div class="widget">',
-			   'after_widget' => '</div></div><div class="break"> </div>',
+			   'after_widget' => '</div><div class="break"> </div>',
 			   'before_title' => '<h3 class="widget-title">',
-			   'after_title' => '</h3><div class="widget-content">'
+			   'after_title' => '</h3>'
 			   ));
 
   register_sidebar( array(

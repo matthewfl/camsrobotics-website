@@ -5,8 +5,9 @@
  <?php endif; ?>
  <?php while( have_posts() ) : the_post(); ?>
  <div class="post grid_9">
-   <h3 class="post-title"><?php the_title(); ?></h3>
-   <div class="post-content"><?php the_content(); ?></div>
+   <h3 class="title"><?php the_title(); ?></h3>
+   <div class="content"><?php the_content(); ?></div>
  </div>
+<div class="break"> </div>
  <?php endwhile; ?>
  <div class="omega"> </div>
