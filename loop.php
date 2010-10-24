@@ -4,7 +4,7 @@
    There is no content Here
  <?php endif; ?>
  <?php while( have_posts() ) : the_post(); ?>
- <div class="post grid_9">
+ <div class="post grid_9 alpha">
    <h3 class="title"><?php the_title(); ?></h3>
    <div class="content"><?php the_content(); ?></div>
  </div>

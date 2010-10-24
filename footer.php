@@ -5,7 +5,7 @@ var kkeys = [], konami = "38,38,40,40,37,39,37,39";
 $(document).keypress(function (e) {
     kkeys.push( e.keyCode );
     if(kkeys.toString().indexOf(konami) >= 0)
-	window.location = "./wp-admin";
+	window.location = "<?php bloginfo('wpurl'); ?>/wp-admin";
 });
 </script>
 </body>

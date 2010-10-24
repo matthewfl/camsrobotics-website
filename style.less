@@ -1,6 +1,6 @@
 /*
  * css for the Nerd herd website
- * created by Matthew Francis-Landau 2010 programming leader
+ * created by Matthew Francis-Landau 2011 programming leader
  */
 
 @import "960";
@@ -36,16 +36,17 @@ body {
     position: relative;
     .rounded(8px);
     a {
-	color: #FF0000;
-    }
-    a:vistied {
 	color: #00FF00;
+    }
+    a:visited {
+	color: #FF0000;
     }
 }
 
 .widget-title {
     //float: left;
     margin-left: 5px;
+    margin-bottom: 0px;
 }
 
 .widget-content {
@@ -75,7 +76,7 @@ body {
     left: 8px;
     top: 4px;
     position: relative;
-    
+    margin-bottom: 4px;
 }
 
 .post {
@@ -83,6 +84,77 @@ body {
 }
 
 .page {
+}
+/*
+.plist {
+    height: 30px;
+    .rounded(8px);
+    background: @green;
+    #topLinks {
+	white-space: nowrap;
+	list-style-type: none;
+	li.page_item { 
+	    display: inline;
+	    font-size: 17px;
+	    margin-left: 8px;
+	}
+    }
+    .page_item {
+	background: #FFFFFF;
+	overflow: hidden;
+	.rounded;
+	//margin-top: 5px;
+	//margin-left: 5px;
+	width: 120%;
+	z-index: 1000;
+	li {
+	    display: inline;
+	}
+	.children {
+	    display: none;
+	    width: 0px;
+	    height: 0px;
+	    overflow: hidden;
+	}
+    }
+}
+*/
+
+.plist {
+    height: 30px;
+    .rounded(8px);
+    background: @green;
+    #topLinks {
+	list-style-type: none;
+	//display: inline;
+	margin-top: 0px;
+	height: 24px;
+	//background: #FF00FF;
+	li.page_item {
+	    display: inline;
+	    background: #FFFFFF;
+	    //height: 24px;
+	    margin-left: 9px;
+	    margin-right: 0px;
+	    .rounded;
+	    a {
+		//background: #FF0000;
+		font-size: 18px;
+		text-decoration: none;
+		color: #0000FF;
+		&:visited {
+		    color: @green /4 + #C30000;
+		}
+	    }
+	    ul.children {
+		display: none;
+		li {
+		    display: inline;
+		    margin-left: 5px;
+		}
+	    }
+	}
+    }
 }
 
 .break { .clear; height: 15px; }
