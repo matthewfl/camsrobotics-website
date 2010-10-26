@@ -16,11 +16,15 @@ $(function () {
     //$(".plist .page_item .children").hide();
 
     */
-    $(".plist .page_item").hover(function () {
+    var timer;
+    $("#topLinks > .page_item").hover(function () {
 	$(".plist .children").css("display", "none");
 	$(".children", this).css("display", "inline");
+	clearTimeout(timer);
     });
     $(".plist").mouseleave(function () {
-	$(".plist .children").css("display", "none");
+	timer = setTimeout('$(".plist .children").css("display", "none");', 600);
     });
+
 });
+

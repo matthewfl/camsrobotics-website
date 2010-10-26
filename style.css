@@ -705,7 +705,7 @@ body {
 }
 .plist #topLinks {
   list-style-type: none;
-  margin-top: 0px;
+  margin-top: 3px;
   height: 24px;
 }
 .plist #topLinks li.page_item {
@@ -718,7 +718,7 @@ body {
   border-radius: 5px;
 }
 .plist #topLinks li.page_item a {
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   color: #0000FF;
 }

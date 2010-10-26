@@ -7,7 +7,8 @@
 
 @lightBlue: #0000AA;
 @darkBlue: #0000FF;
-@green: #00FF00;
+@boarder: #EE6AA7;
+@sidelinks: #00FF00;
 
 body {
     background: url(images/background.jpg) no-repeat;
@@ -15,13 +16,13 @@ body {
 }
 
 .mainContent {
-    background: @green;
+    background: @boarder;
     overflow: hidden;
     .rounded(15px);
 }
 
 .sidebar {
-    background: #00FF00;
+    background: @boarder;
     .break {
 	height: 8px;
     }
@@ -36,7 +37,7 @@ body {
     position: relative;
     .rounded(8px);
     a {
-	color: #00FF00;
+	color: @sidelinks;
     }
     a:visited {
 	color: #FF0000;
@@ -123,11 +124,11 @@ body {
 .plist {
     height: 30px;
     .rounded(8px);
-    background: @green;
+    background: @boarder;
     #topLinks {
 	list-style-type: none;
 	//display: inline;
-	margin-top: 0px;
+	margin-top: 3px;
 	height: 24px;
 	//background: #FF00FF;
 	li.page_item {
@@ -139,11 +140,11 @@ body {
 	    .rounded;
 	    a {
 		//background: #FF0000;
-		font-size: 18px;
+		font-size: 15px;
 		text-decoration: none;
 		color: #0000FF;
 		&:visited {
-		    color: @green /4 + #C30000;
+		    color: @sidelinks /4 + #C30000;
 		}
 	    }
 	    ul.children {
