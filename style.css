@@ -594,14 +594,14 @@ body {
   background: url(images/background.jpg) no-repeat;
 }
 .mainContent {
-  background: #00ff00;
+  background: #ee6aa7;
   overflow: hidden;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
 .sidebar {
-  background: #00FF00;
+  background: #ee6aa7;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -620,7 +620,7 @@ body {
   border-radius: 8px;
 }
 .widget a {
-  color: #00FF00;
+  color: #00ff00;
 }
 .widget a:visited {
   color: #FF0000;
@@ -656,7 +656,7 @@ body {
   margin-bottom: 4px;
 }
 .post {
-  background: #00ff00;
+  background: #ee6aa7;
   overflow: hidden;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -701,7 +701,7 @@ body {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  background: #00ff00;
+  background: #ee6aa7;
 }
 .plist #topLinks {
   list-style-type: none;
